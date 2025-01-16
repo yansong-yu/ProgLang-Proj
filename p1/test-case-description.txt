@@ -1,0 +1,6 @@
+Test case: int x = 1; int y; y = x; should pass type checking and should exit with exit code 0 (i.e., Interpreter.EXIT_SUCCESS)
+Test case: int x = 3.14; should fail type checking and should exit with exit code 2 (i.e., Interpreter.EXIT_STATIC_CHECKING_ERROR)
+Test case: int x = 1; int y = 2; int z = 1 + (x + y); print z + 5; should pass type checking (exit code 0)
+Test case: int x; int y = 1; int z = x + y; should pass type checking (exit code 0)
+Test case: int x = y + 2; int y = 1; should fail type checking (exit code 2)
+Test case: int x = 1; y = x; int y; should fail type checking (exit code 2)

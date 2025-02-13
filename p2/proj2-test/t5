@@ -1,0 +1,1 @@
+int x = readint; float y = 5.; if (x==0) { int y = x + 1; { int z = y + 2; } { int w = z + 3; } } 

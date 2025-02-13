@@ -1,0 +1,2 @@
+int x = readfloat;
+float y = readint;

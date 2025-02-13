@@ -13,6 +13,10 @@ public class PrintStmt extends Stmt {
 	ps.print(";");
     }
     public RecordYYS check(){
-        return new RecordYYS(DataTypeYYS.NULL, true);
+        RecordYYS rec = expr.check();
+        if (rec.statusCode == false)
+            return new RecordYYS(DataTypeYYS.NULL, false);
+        else
+            return rec;
     }
 }

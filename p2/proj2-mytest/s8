@@ -1,0 +1,7 @@
+int z;
+{
+	int x;
+int y;
+int z;
+}
+int z = readfloat;
